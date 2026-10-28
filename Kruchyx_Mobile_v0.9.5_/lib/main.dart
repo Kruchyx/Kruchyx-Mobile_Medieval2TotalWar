@@ -278,7 +278,6 @@ class _KruchyxHomeState extends State<KruchyxHome> {
         Card(child: ExpansionTile(
           title: Text(text(e['title'])),
           subtitle: Text('${e['category']}  •  ${e['confidence']}\n${e['short']}'),
-          isThreeLine: true,
           childrenPadding: const EdgeInsets.fromLTRB(18, 0, 18, 16),
           expandedCrossAxisAlignment: CrossAxisAlignment.start,
           children: [
