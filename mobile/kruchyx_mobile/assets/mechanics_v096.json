@@ -1,0 +1,262 @@
+{
+  "schema": "kruchyx-mechanics-v1",
+  "version": "0.9.6",
+  "articles": [
+    {
+      "id": "mechanic_01",
+      "category": "Gospodarka",
+      "title": "Podatki a porządek publiczny",
+      "body": "Wyższe podatki zwykle zwiększają wpływy, lecz mogą obniżyć zadowolenie ludności. Weryfikuj poziom porządku po każdej zmianie i obserwuj jego czynniki. Zysk z danego miasta nie jest stały: zmieniają go handel, infrastruktura, korupcja oraz wydarzenia.",
+      "tip": "Wskazówka: porównuj dochód netto po turze i nie dopuszczaj do buntu bez planu.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_02",
+      "category": "Gospodarka",
+      "title": "Drogi i handel",
+      "body": "Drogi poprawiają logistykę i wspierają wymianę handlową. Najbardziej opłacalne połączenia zależą od lokalizacji osad i portów. Warto inwestować tam, gdzie ruch kupców i transport armii mają duże znaczenie.",
+      "tip": "Wskazówka: połączenie portów z drogami bywa praktyczniejsze od kolejnego budynku wojskowego.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_03",
+      "category": "Gospodarka",
+      "title": "Porty i blokady",
+      "body": "Porty pomagają budować gospodarkę morską i pozwalają rekrutować odpowiednie okręty. Wrogie floty mogą zakłócić handel. Silne wybrzeże wymaga nie tylko portów, ale również ochrony morskiej.",
+      "tip": "Wskazówka: obserwuj sytuację na sąsiednich akwenach.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_04",
+      "category": "Gospodarka",
+      "title": "Kopalnie i zasoby",
+      "body": "Potencjał kopalń oraz dostępność surowców handlowych zależą od regionu i moda. Kupcy korzystają ze wskazanych zasobów, ale wysokość dochodu nie wynika wyłącznie z wartości surowca.",
+      "tip": "Wskazówka: najpierw przetestuj kupca na wybranym polu.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_05",
+      "category": "Gospodarka",
+      "title": "Koszt utrzymania armii",
+      "body": "Droga armia może zrujnować nawet dobrze rozwiniętą frakcję. Koszt rekrutacji jest jednorazowy, a utrzymanie zwykle powtarza się co turę. Porównuj planowaną armię z nadwyżką skarbca.",
+      "tip": "Wskazówka: przed wojną zachowuj rezerwę na kilka tur.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_06",
+      "category": "Gospodarka",
+      "title": "Miasto czy zamek?",
+      "body": "Miasta skupiają się na rozwoju gospodarki, a zamki udostępniają specyficzne łańcuchy wojskowe. Przekształcenie osady zmienia dostępne budynki i możliwości rozwoju. Nie jest to decyzja odwracalna bez konsekwencji.",
+      "tip": "Wskazówka: przed konwersją sprawdź budynki, poziom populacji i garnizon.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_07",
+      "category": "Dyplomacja",
+      "title": "Reputacja i umowy",
+      "body": "Wizerunek frakcji wpływa na dyplomację, lecz dokładne decyzje AI zależą od wielu warunków. Częste zrywanie układów i ataki mogą obniżać zaufanie. Płacenie prezentów nie gwarantuje trwałego sojuszu.",
+      "tip": "Wskazówka: testuj ofertę i jej faktyczne skutki, nie tylko ocenę przed podpisaniem.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_08",
+      "category": "Dyplomacja",
+      "title": "Umowy handlowe",
+      "body": "Prawa handlowe mogą wspierać handel między frakcjami. Warto zawierać je również z odległymi państwami, o ile istnieje szansa na realne połączenia szlaków.",
+      "tip": "Wskazówka: dyplomatów wysyłaj zanim stosunki pogorszą się przez wojnę.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_09",
+      "category": "Dyplomacja",
+      "title": "Trybut na wiele tur",
+      "body": "Długotrwałe płatności mogą zostać zawarte w negocjacjach dyplomatycznych. Niektóre relacje graczy opisują nadużycie oceny bardzo długiego okresu. Nie ma potwierdzonego uniwersalnego wzoru na akceptowaną kwotę.",
+      "tip": "Wskazówka: kalkulator podaje propozycję eksperymentalną; weryfikuj stan skarbca po turze.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_10",
+      "category": "Dyplomacja",
+      "title": "Ekskomunika",
+      "body": "Katolickie frakcje mogą narazić się na ekskomunikę w wyniku konfliktów z papieżem. Zmiana władcy lub relacji z papiestwem może wpłynąć na sytuację. Nie stosuj jednej strategii do wszystkich modów.",
+      "tip": "Wskazówka: analizuj stosunki z papiestwem przed wojną katolików.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_11",
+      "category": "Religia",
+      "title": "Wybory papieża",
+      "body": "Kardynałowie uczestniczą w wyborach papieża, a ich wpływ zależy od systemu religijnego w kampanii. Państwo Kościelne ma szczególne zasady przetrwania i wyboru przywódcy.",
+      "tip": "Wskazówka: posiadanie kardynałów jest długoterminowym narzędziem dyplomatycznym.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_12",
+      "category": "Religia",
+      "title": "Krucjaty",
+      "body": "Krucjaty mogą dawać premie ruchu i specjalne warunki rekrutacji, ale oddziały mogą dezerterować, jeśli wyprawa długo nie zbliża się do celu. Efekty zależą od wydarzenia i zasad kampanii.",
+      "tip": "Wskazówka: przygotuj transport morski i zaplecze finansowe wcześniej.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_13",
+      "category": "Religia",
+      "title": "Dżihad",
+      "body": "Dżihad to odpowiednik wielkiej wyprawy religijnej dla odpowiednich frakcji. Może wpływać na dostępność rekrutacji oraz ruch wojsk. Długie wyprawy daleko od celu mogą prowadzić do problemów z dyscypliną.",
+      "tip": "Wskazówka: sprawdzaj warunki dołączenia i bieżący cel wyprawy.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_14",
+      "category": "Agenci",
+      "title": "Szpiedzy",
+      "body": "Szpiedzy służą do zdobywania informacji i prób infiltracji osad. Ich skuteczność zależy od umiejętności, obrony celu i mechanik moda. Nie każda próba daje ten sam wynik.",
+      "tip": "Wskazówka: rozpoznaj garnizon przed szturmem.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_15",
+      "category": "Agenci",
+      "title": "Zabójcy",
+      "body": "Zabójcy mogą eliminować wybrane postacie, ale próby wiążą się z ryzykiem porażki i wykrycia. Przydatność agenta rośnie wraz z doświadczeniem.",
+      "tip": "Wskazówka: nie opieraj całej strategii na jednym agencie.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_16",
+      "category": "Agenci",
+      "title": "Kupcy",
+      "body": "Kupcy uzyskują dochód na surowcach i mogą rywalizować z innymi kupcami. Zasób, umiejętności i położenie mają znaczenie. Sztuczki ze spiętrzaniem kupców należy sprawdzać osobno w wybranym modzie.",
+      "tip": "Wskazówka: korzystaj z kalkulatora dopiero po zaobserwowaniu prawdziwego dochodu.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_17",
+      "category": "Agenci",
+      "title": "Księżniczki",
+      "body": "Księżniczki mogą wykorzystywać dyplomację małżeństw do rozbudowy dynastii i wpływów. Wynik zależy od uroku, celu oraz warunków kampanii.",
+      "tip": "Wskazówka: rozważ korzyści polityczne, nie tylko statystyki generała.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_18",
+      "category": "Generałowie",
+      "title": "Cechy i świta",
+      "body": "Generałowie rozwijają cechy i członków świty w odpowiedzi na działania w kampanii. Część premii jest sytuacyjna. W modach listy cech i wyzwalaczy mogą znacznie się różnić.",
+      "tip": "Wskazówka: nie zakładaj, że komenda trait z Vanilla zadziała w każdym modzie.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_19",
+      "category": "Generałowie",
+      "title": "Sukcesja i adopcja",
+      "body": "Rodzina królewska oraz kolejność dziedziczenia mają wpływ na stabilność frakcji. Adopcje i małżeństwa mogą zmieniać przyszły skład dynastii.",
+      "tip": "Wskazówka: pilnuj wieku i lojalności następców.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_20",
+      "category": "Bitwy",
+      "title": "Morale i panika",
+      "body": "Morale zależy od dowodzenia, strat, zmęczenia, otoczenia i innych czynników. Nawet silna jednostka może uciec, kiedy reszta armii się załamie.",
+      "tip": "Wskazówka: chroń generała i uderzaj na flanki przeciwnika.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_21",
+      "category": "Bitwy",
+      "title": "Szarże kawalerii",
+      "body": "Kawaleria jest skuteczna, gdy trafia w nieprzygotowany bok lub tyły wroga. Włócznie i odpowiednie formacje mogą złamać szarżę. Teren ogranicza rozpęd.",
+      "tip": "Wskazówka: cofaj kawalerię, zamiast utrzymywać ją w długim zwarciu.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_22",
+      "category": "Bitwy",
+      "title": "Łucznicy a pancerz",
+      "body": "Skuteczność strzelców zależy od rodzaju broni, pancerza, tarcz, pozycji oraz zasięgu. Nie wszystkie łuki i kusze zachowują się identycznie.",
+      "tip": "Wskazówka: staraj się uzyskać korzystny kąt ostrzału.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_23",
+      "category": "Bitwy",
+      "title": "Wzgórza i mosty",
+      "body": "Wzgórza pomagają obrońcy i utrudniają szarże pod górę. Mosty pozwalają skupić obronę na wąskim froncie, ale oddają przeciwnikowi inicjatywę.",
+      "tip": "Wskazówka: jednostki antykawaleryjskie na wąskiej przeprawie mogą wytrzymać liczniejszych wrogów.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_24",
+      "category": "Bitwy",
+      "title": "Obrona murów",
+      "body": "Oblężenia wymagają innego składu wojsk niż otwarte pole. Rozmieszczenie strzelców, rezerw i kontrola bram mają ogromne znaczenie.",
+      "tip": "Wskazówka: zawsze miej oddział zdolny odzyskać plac miejski.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_25",
+      "category": "Kampania",
+      "title": "Najazd Mongołów",
+      "body": "Mongołowie są specjalną frakcją hordy i mogą działać bez osad. Ostrzeżenie o najazdach nie musi oznaczać pojawienia się armii w tej samej turze. Mody mogą zmieniać czas i kierunki.",
+      "tip": "Wskazówka: buduj zwiad, obronę przepraw i oszczędności.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_26",
+      "category": "Kampania",
+      "title": "Najazd Timurydów",
+      "body": "Timurydzi są późną hordą, która może używać słoni bojowych. Dokładne daty najazdu i miejsce pojawienia się zależą od konfiguracji i skryptów.",
+      "tip": "Wskazówka: przygotuj wyspecjalizowaną obronę przed szarżą i słoniami.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_27",
+      "category": "Kampania",
+      "title": "Czarna śmierć",
+      "body": "Epidemia może niszczyć populację, gospodarkę i zdolność działania agentów. Wystąpienie i rozwój epidemii zależą od zasad i zdarzeń kampanii.",
+      "tip": "Wskazówka: twórz finansową rezerwę przed znanym oknem wydarzenia.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_28",
+      "category": "Kampania",
+      "title": "Broń prochowa",
+      "body": "Wydarzenie wynalezienia prochu otwiera nowe możliwości militarne, lecz dostęp do jednostek zależy także od budynków i frakcji.",
+      "tip": "Wskazówka: sprawdzaj ścieżki odblokowania jednostek w danym modzie.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_29",
+      "category": "Kampania",
+      "title": "Odkrycie Nowego Świata",
+      "body": "Późna faza kampanii może umożliwiać wyprawy oceaniczne. Możliwość dotarcia do konkretnych obszarów zależy od mapy i dostępnych jednostek morskich.",
+      "tip": "Wskazówka: planuj porty i flotę na wiele tur naprzód.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_30",
+      "category": "Exploity",
+      "title": "Łączenie zamku z miastem",
+      "body": "W niektórych wersjach gry kolejka budowania podczas konwersji osady może zachować część budynków z poprzedniego typu osady. Nie jest to zwykła mechanika i wynik nie jest gwarantowany.",
+      "tip": "Wskazówka: zawsze zrób osobny zapis przed eksperymentem.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_31",
+      "category": "Exploity",
+      "title": "Sally glitch",
+      "body": "AI może niedoszacować siły posiłków, gdy główne siły stoją obok słabej armii oblegającej. Zachowanie zależy od warunków bitwy i wersji gry.",
+      "tip": "Wskazówka: sprawdzaj siłę wypadów garnizonu i dostępne posiłki.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    },
+    {
+      "id": "mechanic_32",
+      "category": "Exploity",
+      "title": "Obchodzenie agentów",
+      "body": "W niektórych relacjach graczy otaczanie agenta jednostkami prowadzi do jego zniknięcia przy próbie przemieszczenia na zajęte pole. Ten rezultat jest zależny od zachowania silnika.",
+      "tip": "Wskazówka: nie traktuj relacji jako gwarantowanego exploitu.",
+      "status": "Opis praktyczny; szczegóły mogą zależeć od moda i kampanii."
+    }
+  ]
+}

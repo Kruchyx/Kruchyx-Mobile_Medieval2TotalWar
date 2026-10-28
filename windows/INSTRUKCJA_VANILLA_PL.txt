@@ -1,0 +1,87 @@
+KRUCHYX MEDIEVAL MOD STUDIOS 0.9.4 — JAK ROZPAKOWAĆ DANE VANILLA
+================================================================
+
+Wersja dla początkującego — nie musisz zmieniać ani jednej linijki plików gry.
+
+1. Uruchom Kruchyx i otwórz "Biblioteka modów".
+2. Kliknij "Wskaż instalację Medieval II" lub wybierz wykrytą bibliotekę Steam.
+   Przykładowa instalacja:
+   D:\SteamLibrary\steamapps\common\Medieval II Total War
+3. W oknie wyboru kampanii wybierz PIERWSZĄ pozycję:
+   "Medieval II — kampania podstawowa (Vanilla)".
+4. Jeśli dane jednostek nie są jeszcze dostępne, w bibliotece kliknij
+   "PRZYGOTUJ DANE VANILLA (BETA)" i potwierdź.
+5. Program spróbuje użyć oryginalnego pliku:
+   Medieval II Total War\tools\unpacker\unpacker.exe
+   aby skopiować WYBRANE definicje do osobnego folderu:
+   %LOCALAPPDATA%\Kruchyx Medieval Mod Studios\vanilla_cache\<identyfikator instalacji>
+   Twoja instalacja Medieval II nie jest nadpisywana.
+6. Wróć do Doradcy frakcji i Atlasu jednostek, aby sprawdzić wynik.
+
+JEŻELI PRZYGOTOWANIE DANYCH SIĘ NIE UDA
+---------------------------------------
+- Otwórz w programie przycisk "JAK ROZPAKOWAĆ VANILLA".
+- Wskaż katalog instalacji gry; skorzystaj z "KOPIUJ KOMENDY DO .BAT".
+- Wklej kod do Notatnika i zapisz jako "Kruchyx_Vanilla_Extract.bat"
+  (typ pliku: Wszystkie pliki) i uruchom go dwuklikiem.
+- Działanie oryginalnego narzędzia zależy od twojej wersji gry i systemu.
+- Jeśli pojawi się komunikat o MSVCP71.DLL lub MSVCR71.DLL, użyj KOPII DLL
+  z własnego folderu gry (obok medieval2.exe), nie z losowej strony www.
+
+WAŻNE
+-----
+Nie uruchamiaj do tego celu fabrycznego "unpack_all.bat". Wypakowuje pliki
+bezpośrednio do katalogu gry i może spowodować problemy z uruchamianiem.
+Gdy wcześniej wypakowałeś wszystko do folderu data gry i gra się wysypuje,
+po zrobieniu kopii sprawdź tylko dwa pliki: descr_geography_new.txt
+oraz descr_geography_new.db. Nie kasuj na oślep żadnych innych plików.
+
+ŹRÓDŁA:
+https://wiki.twcenter.net/index.php?title=Pack_Extractor
+https://steamcommunity.com/sharedfiles/filedetails/?id=3628543959
+https://forums.totalwar.org/vb/showthread.php/86322-Using-unpacked-files
+
+DIAGNOSTYKA BŁĘDÓW (NOWE W 0.9.4)
+---------------------------------
+Po nieudanej próbie rozpakowania Kruchyx otworzy szczegółowy dziennik.
+Użyj przycisku KOPIUJ DIAGNOSTYKĘ i prześlij tekst, by ustalić przyczynę.
+Dziennik jest też w osobnym katalogu danych, jako:
+  Kruchyx_Vanilla_Unpack.log
+
+Dla twojej instalacji folder gry to prawdopodobnie:
+  D:\SteamLibrary\steamapps\common\Medieval II Total War
+Oficjalny unpacker powinien być w:
+  D:\SteamLibrary\steamapps\common\Medieval II Total War\tools\unpacker\unpacker.exe
+Pliki do wypakowania znajdują się w katalogu gry: packs\*.pack.
+
+Typowe przyczyny:
+- msvcp71.dll / msvcr71.dll: biblioteki starego ekstraktora; jeżeli znajdują
+  się już obok medieval2.exe, skopiuj je do tools\unpacker.
+- Brak unpacker.exe: sprawdź spójność plików gry w Steam; nie pobieraj
+  podejrzanych plików wykonywalnych.
+- Brak archiwów packs\*.pack: wskazano zły folder gry.
+- Brak wyniku, mimo kodu 0: użyj KOPIUJ DIAGNOSTYKĘ i podeślij wynik.
+
+Automatyczne rozpakowanie w 0.9.4 wykorzystuje ścieżkę względną do *.pack
+oraz odpowiada na standardowe potwierdzenia Y starego ekstraktora.
+Nie można jednak potwierdzić zgodności bez próby na twoim Windowsie.
+
+NAPRAWA DLL W v0.9.4 (BŁĄD 3221225781 / 0xC0000135)
+---------------------------------------------------------
+W Windows ten kod oznacza, że nie udało się załadować biblioteki DLL.
+Przy starym unpacker.exe Medieval II zwykle chodzi o msvcr71.dll lub msvcp71.dll.
+
+Metoda automatyczna bez zmian w grze:
+- Kruchyx 0.9.4 dodaje oryginalny folder gry do PATH wyłącznie dla uruchamianego ekstraktora.
+  Jeśli oba pliki DLL istnieją w instalacji gry, Windows może je znaleźć bez kopiowania.
+
+Metoda awaryjna, jednorazowa:
+- W programie wybierz BIBLIOTEKA MODÓW -> JAK ROZPAKOWAĆ VANILLA.
+- Kliknij NAPRAW BRAKUJĄCE DLL. Po potwierdzeniu zostaną skopiowane wyłącznie
+  istniejące pliki z TWOJEGO głównego folderu gry do tools\unpacker.
+- Nie nadpisuje żadnego pliku, a naprawa nie zmienia katalogu DATA ani save'ów.
+- Jeśli nie ma ich w głównym folderze, Steam -> Medieval II -> Właściwości ->
+  Zainstalowane pliki -> Sprawdź spójność plików gry.
+- Po naprawie wróć do biblioteki i kliknij PRZYGOTUJ DANE VANILLA.
+
+Bez ręcznego pobierania DLL z sieci; nie uruchamiaj unpack_all.bat.

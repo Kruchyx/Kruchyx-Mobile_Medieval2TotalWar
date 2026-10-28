@@ -1,0 +1,21 @@
+KRUCHYX MEDIEVAL MOD STUDIOS — CHANGES IN v0.9.2
+=================================================
+[+] EXPLICIT VANILLA / KINGDOMS / MOD CHOICE
+[+] Automatic detection of common Steam library paths; manual game selection
+[+] Layered data resolution: mod > base game > extracted external cache
+[+] Beta opt-in use of official game unpacker (external cache per installation)
+[+] Secrets & Exploits — source-linked step-by-step PL/EN guides
+[+] Merchant army-stacking and resource-fort variants with warnings
+[+] Extreme-duration tribute walkthrough with user-supplied gift scenario
+[+] Illustrative, bounded diplomacy scenario calculator
+[+] English faction names, most prominent dashboard/ranking labels and units
+[+] Academy scroll-to-selected-lesson and reset checklist
+[+] Beginning player's one-page checklist START_DLA_BRATA.txt
+[+] Optional Windows .exe compilation batch (not prebuilt)
+[=] Retained Medieval Premium graphics, unit/economy/advisor modules, trainer
+[=] Retained legacy editors and read-only save browser
+[!] Live process trainer, universal SAVE editor and complete English
+    translation of legacy editors are not available yet.
+[!] Official game data extraction and PyInstaller workflow not tested
+    on the user's Windows machine. No changes are made to original game
+    data by the new library/guide modules.

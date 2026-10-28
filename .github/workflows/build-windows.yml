@@ -1,0 +1,53 @@
+name: Kruchyx v0.9.6 - Windows EXE
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'windows/**'
+      - '.github/workflows/build-windows.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    name: Kompiluj Windows EXE
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: windows
+    steps:
+      - name: Pobierz repozytorium
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: PyInstaller
+        run: python -m pip install --upgrade pyinstaller
+      - name: Testy Python
+        run: python -m unittest discover -p "test_*.py" -q
+      - name: Zbuduj EXE
+        shell: pwsh
+        run: |
+          python -m PyInstaller --noconfirm --clean --onefile --windowed `
+            --name "Kruchyx Medieval Mod Studios" --icon "kruchyx.ico" `
+            --add-data "assets;assets" --add-data "examples;examples" `
+            --add-data "shared;shared" --add-data "kruchyx.ico;." `
+            --hidden-import studio081 "kruchyx_studio.py"
+      - name: Sprawdź EXE
+        shell: pwsh
+        run: |
+          $path = 'dist/Kruchyx Medieval Mod Studios.exe'
+          if (!(Test-Path $path)) { throw 'Brak pliku EXE' }
+          if ((Get-Item $path).Length -lt 100000) { throw 'Zbyt mały EXE' }
+      - name: Udostępnij EXE
+        uses: actions/upload-artifact@v4
+        with:
+          name: Kruchyx-Windows-v0.9.6-EXE
+          path: windows/dist/Kruchyx Medieval Mod Studios.exe
+          if-no-files-found: error

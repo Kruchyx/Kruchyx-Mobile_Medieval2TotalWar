@@ -1,0 +1,15 @@
+Kruchyx Medieval Mod Studios v0.9.5 — Testy
+
+2026-10-28
+- Python: compileall wykonany (bez błędów).
+- unittest discover: 79 testów; OK, 1 pominięty (opcjonalne próbki).
+- Tkinter Xvfb: welcome, chronicles, search, mobile, army, trainer, exploits, calculators uruchomiły się bez wyjątku; PL i EN nawigacja.
+- Dane mobilne: demo_report.json ma 535 jednostek z dostarczonego EDU oraz 44 identyfikatory frakcji.
+- Zweryfikowano format i schemat JSON i odczyt zdarzeń w pliku moda.
+- Flutter analizator/testy: NIE URUCHOMIONO, brak Flutter SDK.
+- Windows PyInstaller EXE: NIE KOMPILOWANO, brak Windows.
+- Android APK: NIE KOMPILOWANO, brak Flutter/Android SDK.
+- iOS IPA: NIE KOMPILOWANO, brak macOS/Xcode/certyfikatów.
+- Integracja z prawdziwym Medieval II / gra Steam: NIE TESTOWANO w tym środowisku.
+
+Nie traktuj tych źródeł jako gotowych podpisanych aplikacji mobilnych.

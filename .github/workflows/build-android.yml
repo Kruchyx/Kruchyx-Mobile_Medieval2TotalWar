@@ -1,69 +1,57 @@
-
-name: Kruchyx Mobile - Android APK
+name: Kruchyx v0.9.6 - Android APK
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+    paths:
+      - 'mobile/**'
+      - '.github/workflows/build-android.yml'
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  build:
-    name: Build Kruchyx Android
+  android:
+    name: Kompiluj Android APK
     runs-on: ubuntu-latest
-
     steps:
-      - name: Pobierz kod aplikacji
+      - name: Pobierz repozytorium
         uses: actions/checkout@v4
-
-      - name: Zainstaluj Java 17
+      - name: Java 17
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '17'
-
-      - name: Zainstaluj Android SDK
+      - name: Android SDK - poprawiona wersja v4
         uses: android-actions/setup-android@v4
-
-      - name: Zainstaluj Flutter
+      - name: Flutter 3.47.8
         uses: subosito/flutter-action@v2
         with:
           channel: stable
           flutter-version: '3.47.8'
           cache: true
-
-      - name: Zbuduj Kruchyx Mobile APK
+      - name: Przygotuj Android i zainstaluj zależności
+        working-directory: mobile/kruchyx_mobile
+        run: |
+          flutter create --platforms=android --org com.kruchyx .
+          flutter pub get
+      - name: Testy Flutter
+        working-directory: mobile/kruchyx_mobile
+        run: flutter test
+      - name: Zbuduj APK
+        working-directory: mobile/kruchyx_mobile
+        run: flutter build apk --release
+      - name: Sprawdź i nazwij plik APK
         shell: bash
         run: |
           set -euo pipefail
-
-          APP_DIR="$(dirname "$(find . -maxdepth 3 -name pubspec.yaml -print -quit)")"
-
-          if [ ! -f "$APP_DIR/pubspec.yaml" ]; then
-            echo "BLAD: Nie znaleziono pubspec.yaml"
-            exit 1
-          fi
-
-          echo "Znaleziono aplikacje w: $APP_DIR"
-          cd "$APP_DIR"
-
-          flutter create --platforms=android --org com.kruchyx .
-          flutter pub get
-          flutter build apk --release
-
-          mkdir -p "$GITHUB_WORKSPACE/apk"
-
-          cp build/app/outputs/flutter-apk/app-release.apk \
-             "$GITHUB_WORKSPACE/apk/Kruchyx-Mobile-v0.9.5.apk"
-
-          echo "APK zostal wygenerowany!"
-
-      - name: Udostepnij gotowy APK
+          test -s mobile/kruchyx_mobile/build/app/outputs/flutter-apk/app-release.apk
+          mkdir -p artifacts/android
+          cp mobile/kruchyx_mobile/build/app/outputs/flutter-apk/app-release.apk artifacts/android/Kruchyx-Mobile-v0.9.6.apk
+      - name: APK do pobrania
         uses: actions/upload-artifact@v4
         with:
-          name: Kruchyx-Mobile-v0.9.5-APK
-          path: apk/Kruchyx-Mobile-v0.9.5.apk
+          name: Kruchyx-Android-v0.9.6-APK
+          path: artifacts/android/Kruchyx-Mobile-v0.9.6.apk
           if-no-files-found: error

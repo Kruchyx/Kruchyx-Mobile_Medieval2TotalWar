@@ -1,0 +1,43 @@
+name: Kruchyx v0.9.6 - iPhone (unsigned iOS app)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ios:
+    name: Kompiluj iOS (bez podpisu Apple)
+    runs-on: macos-latest
+    steps:
+      - name: Pobierz repozytorium
+        uses: actions/checkout@v4
+      - name: Flutter 3.47.8
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: '3.47.8'
+      - name: Przygotuj projekt iOS
+        working-directory: mobile/kruchyx_mobile
+        run: |
+          flutter create --platforms=ios --org com.kruchyx .
+          flutter pub get
+          flutter test
+      - name: Buduj aplikację iOS bez podpisu
+        working-directory: mobile/kruchyx_mobile
+        run: flutter build ios --release --no-codesign
+      - name: Spakuj unsigned Runner.app
+        shell: bash
+        run: |
+          set -euo pipefail
+          APP='mobile/kruchyx_mobile/build/ios/iphoneos/Runner.app'
+          test -d "$APP"
+          mkdir -p artifacts/ios
+          ditto -c -k --sequesterRsrc --keepParent "$APP" artifacts/ios/Kruchyx-iOS-v0.9.6-UNSIGNED-app.zip
+      - name: Udostępnij unsigned iOS app
+        uses: actions/upload-artifact@v4
+        with:
+          name: Kruchyx-iPhone-v0.9.6-UNSIGNED
+          path: artifacts/ios/Kruchyx-iOS-v0.9.6-UNSIGNED-app.zip
+          if-no-files-found: error

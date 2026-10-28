@@ -1,0 +1,34 @@
+# Python / PyInstaller
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.spec
+build/
+dist/
+.venv/
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+.flutter_tool_state
+**/android/local.properties
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+# Credentials / distribution signing
+*.jks
+*.keystore
+*.p12
+*.mobileprovision
+key.properties
+*.pem
+*.p8
+# Editors
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+# Game saves (user personal)
+*.sav

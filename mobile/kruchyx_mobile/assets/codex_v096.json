@@ -1,0 +1,646 @@
+{
+  "schema": "kruchyx-codex-v1",
+  "version": "0.9.6",
+  "factions": [
+    {
+      "id": "england",
+      "name": "Anglia",
+      "region": "Europa Zachodnia",
+      "religion": "Katolicyzm",
+      "strength": "Długie łuki, piechota, silna pozycja wyspiarska.",
+      "strategy": "Zabezpiecz Wyspy, buduj handel morski i rozwijaj łuczników.",
+      "scores": {
+        "wojsko": 5,
+        "gospodarka": 4,
+        "start": 5,
+        "mobilnosc": 3
+      },
+      "color": "#B73B37",
+      "monogram": "E",
+      "special": false,
+      "art": "assets/heraldry/england.png"
+    },
+    {
+      "id": "france",
+      "name": "Francja",
+      "region": "Europa Zachodnia",
+      "religion": "Katolicyzm",
+      "strength": "Rycerstwo, dogodna lokalizacja i szerokie możliwości ekspansji.",
+      "strategy": "Rozwijaj kawalerię, zabezpiecz granice i szukaj sojuszy.",
+      "scores": {
+        "wojsko": 5,
+        "gospodarka": 4,
+        "start": 4,
+        "mobilnosc": 4
+      },
+      "color": "#2B5E98",
+      "monogram": "F",
+      "special": false,
+      "art": "assets/heraldry/france.png"
+    },
+    {
+      "id": "hre",
+      "name": "Święte Cesarstwo Rzymskie",
+      "region": "Europa Środkowa",
+      "religion": "Katolicyzm",
+      "strength": "Centralna pozycja, zróżnicowane wojska, rozbudowana dyplomacja.",
+      "strategy": "Pilnuj kilku frontów i nie zaniedbuj garnizonów.",
+      "scores": {
+        "wojsko": 4,
+        "gospodarka": 4,
+        "start": 3,
+        "mobilnosc": 4
+      },
+      "color": "#6C6661",
+      "monogram": "H",
+      "special": false,
+      "art": "assets/heraldry/hre.png"
+    },
+    {
+      "id": "spain",
+      "name": "Hiszpania",
+      "region": "Półwysep Iberyjski",
+      "religion": "Katolicyzm",
+      "strength": "Silne jednostki, dobra ekspansja na Półwyspie Iberyjskim.",
+      "strategy": "Zabezpiecz cieśniny i skoncentruj siły na wybranym froncie.",
+      "scores": {
+        "wojsko": 4,
+        "gospodarka": 4,
+        "start": 4,
+        "mobilnosc": 3
+      },
+      "color": "#A14C2B",
+      "monogram": "S",
+      "special": false,
+      "art": "assets/heraldry/spain.png"
+    },
+    {
+      "id": "venice",
+      "name": "Wenecja",
+      "region": "Europa Południowa",
+      "religion": "Katolicyzm",
+      "strength": "Handel morski, porty, piechota i dobrze rozwinięta sieć handlowa.",
+      "strategy": "Inwestuj w porty, szlaki handlowe i obronę miast.",
+      "scores": {
+        "wojsko": 4,
+        "gospodarka": 5,
+        "start": 3,
+        "mobilnosc": 3
+      },
+      "color": "#A98638",
+      "monogram": "V",
+      "special": false,
+      "art": "assets/heraldry/venice.png"
+    },
+    {
+      "id": "sicily",
+      "name": "Sycylia",
+      "region": "Morze Śródziemne",
+      "religion": "Katolicyzm",
+      "strength": "Pozycja morska, możliwość ekspansji w Afryce i Italii.",
+      "strategy": "Kontroluj transport morski i utrzymuj silne garnizony.",
+      "scores": {
+        "wojsko": 4,
+        "gospodarka": 4,
+        "start": 3,
+        "mobilnosc": 4
+      },
+      "color": "#705A91",
+      "monogram": "Si",
+      "special": false,
+      "art": "assets/heraldry/sicily.png"
+    },
+    {
+      "id": "milan",
+      "name": "Mediolan",
+      "region": "Italia",
+      "religion": "Katolicyzm",
+      "strength": "Dobra piechota miejska, handel i korzystne miasta.",
+      "strategy": "Rozwijaj gospodarkę i kontroluj konflikty włoskich sąsiadów.",
+      "scores": {
+        "wojsko": 4,
+        "gospodarka": 5,
+        "start": 3,
+        "mobilnosc": 3
+      },
+      "color": "#387D65",
+      "monogram": "M",
+      "special": false,
+      "art": "assets/heraldry/milan.png"
+    },
+    {
+      "id": "scotland",
+      "name": "Szkocja",
+      "region": "Wyspy Brytyjskie",
+      "religion": "Katolicyzm",
+      "strength": "Mocna piechota, możliwość zwartej obrony północy.",
+      "strategy": "Zabezpiecz północ i starannie planuj konflikt z Anglią.",
+      "scores": {
+        "wojsko": 3,
+        "gospodarka": 3,
+        "start": 4,
+        "mobilnosc": 2
+      },
+      "color": "#2E6586",
+      "monogram": "Sc",
+      "special": false,
+      "art": "assets/heraldry/scotland.png"
+    },
+    {
+      "id": "denmark",
+      "name": "Dania",
+      "region": "Północna Europa",
+      "religion": "Katolicyzm",
+      "strength": "Solidna piechota, możliwości ekspansji przez Bałtyk.",
+      "strategy": "Korzystaj z floty i broń przepraw na południu.",
+      "scores": {
+        "wojsko": 4,
+        "gospodarka": 3,
+        "start": 4,
+        "mobilnosc": 3
+      },
+      "color": "#A14A49",
+      "monogram": "D",
+      "special": false,
+      "art": "assets/heraldry/denmark.png"
+    },
+    {
+      "id": "portugal",
+      "name": "Portugalia",
+      "region": "Półwysep Iberyjski",
+      "religion": "Katolicyzm",
+      "strength": "Handel oceaniczny, piechota i możliwość rozwoju morskiego.",
+      "strategy": "Buduj porty i skup się na kontrolowaniu wybrzeża.",
+      "scores": {
+        "wojsko": 3,
+        "gospodarka": 4,
+        "start": 3,
+        "mobilnosc": 3
+      },
+      "color": "#29744D",
+      "monogram": "P",
+      "special": false,
+      "art": "assets/heraldry/portugal.png"
+    },
+    {
+      "id": "poland",
+      "name": "Polska",
+      "region": "Europa Środkowo-Wschodnia",
+      "religion": "Katolicyzm",
+      "strength": "Świetna kawaleria, elastyczne kampanie lądowe.",
+      "strategy": "Stawiaj na mobilność i osłaniaj kawalerię odpowiednią piechotą.",
+      "scores": {
+        "wojsko": 5,
+        "gospodarka": 3,
+        "start": 3,
+        "mobilnosc": 5
+      },
+      "color": "#B64747",
+      "monogram": "PL",
+      "special": false,
+      "art": "assets/heraldry/poland.png"
+    },
+    {
+      "id": "hungary",
+      "name": "Węgry",
+      "region": "Europa Środkowa",
+      "religion": "Katolicyzm",
+      "strength": "Kawaleria i dobre położenie między licznymi frontami.",
+      "strategy": "Dbaj o granice i szybko reaguj na zagrożenia ze wschodu.",
+      "scores": {
+        "wojsko": 4,
+        "gospodarka": 3,
+        "start": 3,
+        "mobilnosc": 5
+      },
+      "color": "#477F54",
+      "monogram": "HU",
+      "special": false,
+      "art": "assets/heraldry/hungary.png"
+    },
+    {
+      "id": "russia",
+      "name": "Ruś",
+      "region": "Europa Wschodnia",
+      "religion": "Prawosławie",
+      "strength": "Dużo przestrzeni, konni łucznicy i elastyczna jazda.",
+      "strategy": "Planowanie dystansów jest kluczowe; pilnuj ogromnych granic.",
+      "scores": {
+        "wojsko": 4,
+        "gospodarka": 3,
+        "start": 2,
+        "mobilnosc": 5
+      },
+      "color": "#5978A0",
+      "monogram": "R",
+      "special": false,
+      "art": "assets/heraldry/russia.png"
+    },
+    {
+      "id": "byzantium",
+      "name": "Bizancjum",
+      "region": "Bałkany i Anatolia",
+      "religion": "Prawosławie",
+      "strength": "Elitarna kawaleria, zróżnicowane jednostki, ważne porty.",
+      "strategy": "Utrzymaj Konstantynopol i zabezpiecz Anatolię.",
+      "scores": {
+        "wojsko": 5,
+        "gospodarka": 4,
+        "start": 3,
+        "mobilnosc": 4
+      },
+      "color": "#8B568F",
+      "monogram": "B",
+      "special": false,
+      "art": "assets/heraldry/byzantium.png"
+    },
+    {
+      "id": "turks",
+      "name": "Turcy",
+      "region": "Anatolia i Bliski Wschód",
+      "religion": "Islam",
+      "strength": "Łucznicy konni, mobilność, potencjał rozwoju prochu.",
+      "strategy": "Nękaj przeciwników ostrzałem i szarżuj w dogodnym momencie.",
+      "scores": {
+        "wojsko": 5,
+        "gospodarka": 3,
+        "start": 3,
+        "mobilnosc": 5
+      },
+      "color": "#4D8661",
+      "monogram": "T",
+      "special": false,
+      "art": "assets/heraldry/turks.png"
+    },
+    {
+      "id": "egypt",
+      "name": "Egipt",
+      "region": "Afryka Północna",
+      "religion": "Islam",
+      "strength": "Silna kawaleria, dostęp do ważnych szlaków handlowych.",
+      "strategy": "Utrzymuj kontrolę nad Egiptem i drogami do Lewantu.",
+      "scores": {
+        "wojsko": 5,
+        "gospodarka": 5,
+        "start": 4,
+        "mobilnosc": 4
+      },
+      "color": "#B18D45",
+      "monogram": "Eg",
+      "special": false,
+      "art": "assets/heraldry/egypt.png"
+    },
+    {
+      "id": "moors",
+      "name": "Maurowie",
+      "region": "Półwysep Iberyjski i Maghreb",
+      "religion": "Islam",
+      "strength": "Różnorodne wojska, silna pozycja na szlakach śródziemnomorskich.",
+      "strategy": "Wykorzystuj mobilne oddziały i rozsądnie broń cieśnin.",
+      "scores": {
+        "wojsko": 4,
+        "gospodarka": 4,
+        "start": 3,
+        "mobilnosc": 4
+      },
+      "color": "#557E67",
+      "monogram": "Mo",
+      "special": false,
+      "art": "assets/heraldry/moors.png"
+    },
+    {
+      "id": "papal_states",
+      "name": "Państwo Kościelne",
+      "region": "Italia",
+      "religion": "Katolicyzm",
+      "strength": "Specjalne zasady papiestwa i ogromny wpływ religijny.",
+      "strategy": "To frakcja specjalna; jej mechaniki różnią się od zwykłych państw.",
+      "scores": {
+        "wojsko": 2,
+        "gospodarka": 3,
+        "start": 1,
+        "mobilnosc": 2
+      },
+      "color": "#D9BE7C",
+      "monogram": "Pa",
+      "special": true,
+      "art": "assets/heraldry/papal_states.png"
+    },
+    {
+      "id": "mongols",
+      "name": "Mongołowie",
+      "region": "Najazd ze wschodu",
+      "religion": "Specjalna",
+      "strength": "Horda, ogromna mobilność i potężni konni łucznicy.",
+      "strategy": "Przygotuj antykawalerię, obronę mostów i twierdz.",
+      "scores": {
+        "wojsko": 5,
+        "gospodarka": 2,
+        "start": 1,
+        "mobilnosc": 5
+      },
+      "color": "#5A706A",
+      "monogram": "Mg",
+      "special": true,
+      "art": "assets/heraldry/mongols.png"
+    },
+    {
+      "id": "timurids",
+      "name": "Timurydzi",
+      "region": "Najazd ze wschodu",
+      "religion": "Specjalna",
+      "strength": "Horda, słonie bojowe i silna konnica.",
+      "strategy": "Zwalczaj słonie ostrzałem i utrzymuj odpowiednie dystanse.",
+      "scores": {
+        "wojsko": 5,
+        "gospodarka": 2,
+        "start": 1,
+        "mobilnosc": 4
+      },
+      "color": "#8D5A4B",
+      "monogram": "Ti",
+      "special": true,
+      "art": "assets/heraldry/timurids.png"
+    },
+    {
+      "id": "aztecs",
+      "name": "Aztekowie",
+      "region": "Ameryka",
+      "religion": "Religia lokalna",
+      "strength": "Specjalna frakcja Nowego Świata, odmienne warunki walki.",
+      "strategy": "Wymaga osobnego podejścia do składu i technologii armii.",
+      "scores": {
+        "wojsko": 3,
+        "gospodarka": 2,
+        "start": 1,
+        "mobilnosc": 2
+      },
+      "color": "#637E42",
+      "monogram": "Az",
+      "special": true,
+      "art": "assets/heraldry/aztecs.png"
+    },
+    {
+      "id": "slave",
+      "name": "Rebelianci",
+      "region": "Cała mapa",
+      "religion": "Różne",
+      "strength": "Niezależne osady i armie, brak typowej kampanii państwowej.",
+      "strategy": "Sprawdzaj skład garnizonu przed szturmem.",
+      "scores": {
+        "wojsko": 2,
+        "gospodarka": 1,
+        "start": 1,
+        "mobilnosc": 1
+      },
+      "color": "#6D6D6D",
+      "monogram": "Re",
+      "special": true,
+      "art": "assets/heraldry/slave.png"
+    }
+  ],
+  "cities": [
+    {
+      "id": "city_1",
+      "name": "Konstantynopol",
+      "region": "Bizancjum",
+      "description": "Kontrola cieśnin, handel morski i kluczowe przejście między kontynentami.",
+      "trade_index": 5,
+      "strategic_index": 5,
+      "focus": "Porty i połączenie z Anatolią",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_2",
+      "name": "Wenecja",
+      "region": "Italia",
+      "description": "Położenie handlowe nad Adriatykiem, ważny port.",
+      "trade_index": 5,
+      "strategic_index": 4,
+      "focus": "Szlaki adriatyckie",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_3",
+      "name": "Rzym",
+      "region": "Italia",
+      "description": "Znaczenie religijne, dyplomatyczne i strategiczne.",
+      "trade_index": 4,
+      "strategic_index": 5,
+      "focus": "Papiestwo, relacje katolickie",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_4",
+      "name": "Mediolan",
+      "region": "Italia",
+      "description": "Silne zaplecze miejskie i strategiczna Italia.",
+      "trade_index": 4,
+      "strategic_index": 4,
+      "focus": "Produkcja i obrona północnej Italii",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_5",
+      "name": "Londyn",
+      "region": "Wyspy Brytyjskie",
+      "description": "Silne zaplecze gospodarcze i dogodny dostęp do morza.",
+      "trade_index": 5,
+      "strategic_index": 4,
+      "focus": "Handel i obrona kanału",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_6",
+      "name": "Paryż",
+      "region": "Francja",
+      "description": "Centralne położenie i strategiczne połączenia na lądzie.",
+      "trade_index": 4,
+      "strategic_index": 5,
+      "focus": "Węzeł dróg we Francji",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_7",
+      "name": "Antiochia",
+      "region": "Lewant",
+      "description": "Ważny punkt wypraw krzyżowych i kontroli północnego Lewantu.",
+      "trade_index": 3,
+      "strategic_index": 5,
+      "focus": "Twierdze i dostawy",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_8",
+      "name": "Jerozolima",
+      "region": "Lewant",
+      "description": "Religijna i strategiczna wartość dla wielu frakcji.",
+      "trade_index": 3,
+      "strategic_index": 5,
+      "focus": "Krucjaty i dżihady",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_9",
+      "name": "Aleksandria",
+      "region": "Egipt",
+      "description": "Port o dużym potencjale handlowym we wschodnim Morzu Śródziemnym.",
+      "trade_index": 5,
+      "strategic_index": 4,
+      "focus": "Handel morski i Egipt",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_10",
+      "name": "Kair",
+      "region": "Egipt",
+      "description": "Ważny ośrodek lądowy i gospodarczy.",
+      "trade_index": 4,
+      "strategic_index": 4,
+      "focus": "Szlaki egipskie",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_11",
+      "name": "Kordoba",
+      "region": "Iberia",
+      "description": "Zaplecze miejskie i ważna pozycja na Półwyspie Iberyjskim.",
+      "trade_index": 4,
+      "strategic_index": 4,
+      "focus": "Kontrola południowej Iberii",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_12",
+      "name": "Granada",
+      "region": "Iberia",
+      "description": "Znaczenie w rywalizacji o południową Iberię.",
+      "trade_index": 3,
+      "strategic_index": 4,
+      "focus": "Obrona południa",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_13",
+      "name": "Toledo",
+      "region": "Iberia",
+      "description": "Środkowe położenie na Półwyspie Iberyjskim.",
+      "trade_index": 3,
+      "strategic_index": 4,
+      "focus": "Węzeł dróg",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_14",
+      "name": "Lizbona",
+      "region": "Iberia",
+      "description": "Potencjał morski i dostęp do Atlantyku.",
+      "trade_index": 4,
+      "strategic_index": 3,
+      "focus": "Port atlantycki",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_15",
+      "name": "Edynburg",
+      "region": "Szkocja",
+      "description": "Obrona północy Wysp Brytyjskich.",
+      "trade_index": 3,
+      "strategic_index": 4,
+      "focus": "Garnizon północny",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_16",
+      "name": "York",
+      "region": "Anglia",
+      "description": "Istotna pozycja na szlaku między Anglią i Szkocją.",
+      "trade_index": 3,
+      "strategic_index": 4,
+      "focus": "Ochrona północy",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_17",
+      "name": "Hamburg",
+      "region": "Północne Niemcy",
+      "description": "Dostęp do szlaków bałtyckich i północnych.",
+      "trade_index": 4,
+      "strategic_index": 3,
+      "focus": "Handel morski",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_18",
+      "name": "Kraków",
+      "region": "Polska",
+      "description": "Strategiczne położenie i zaplecze Europy Środkowej.",
+      "trade_index": 3,
+      "strategic_index": 4,
+      "focus": "Obrona i mobilizacja",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_19",
+      "name": "Kijów",
+      "region": "Ruś",
+      "description": "Ważna pozycja dla rozległych kampanii wschodnich.",
+      "trade_index": 3,
+      "strategic_index": 4,
+      "focus": "Szlaki wschodnie",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_20",
+      "name": "Nowogród",
+      "region": "Ruś",
+      "description": "Potencjał handlowy północno-wschodniej Europy.",
+      "trade_index": 4,
+      "strategic_index": 3,
+      "focus": "Handel i dystans",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_21",
+      "name": "Sztokholm",
+      "region": "Skandynawia",
+      "description": "Dostęp do szlaków bałtyckich.",
+      "trade_index": 4,
+      "strategic_index": 3,
+      "focus": "Flota i przesmyki",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_22",
+      "name": "Ragusa",
+      "region": "Bałkany",
+      "description": "Dostęp do Adriatyku i rywalizujących państw.",
+      "trade_index": 4,
+      "strategic_index": 3,
+      "focus": "Handel i dyplomacja",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_23",
+      "name": "Bagdad",
+      "region": "Mezopotamia",
+      "description": "Ważny punkt na wschodnich szlakach handlowych.",
+      "trade_index": 4,
+      "strategic_index": 4,
+      "focus": "Dostawy i kontrola regionu",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    },
+    {
+      "id": "city_24",
+      "name": "Damaszek",
+      "region": "Lewant",
+      "description": "Położenie blisko ważnych szlaków i konfliktów.",
+      "trade_index": 4,
+      "strategic_index": 4,
+      "focus": "Kontrola zaplecza Lewantu",
+      "note": "Ocena redakcyjna 1–5; nie jest to dochód z plików gry."
+    }
+  ],
+  "scoring": "Subiektywne oceny redakcyjne 1–5 do porównywania stylów gry. Nie zastępują statystyk ani wyników z konkretnego moda. Frakcje specjalne domyślnie poza rankingiem standardowych.",
+  "art_credits": "Autorskie symbole poglądowe, nie są oficjalnymi herbami Medieval II."
+}

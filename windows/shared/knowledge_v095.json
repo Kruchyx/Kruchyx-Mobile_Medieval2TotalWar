@@ -1,0 +1,237 @@
+{
+  "schema": "kruchyx-knowledge-v1",
+  "version": "0.9.5",
+  "disclaimer": "Terminy Vanilla są orientacyjne. Skrypty mogą wywołać rzeczywisty najazd po wcześniejszym ostrzeżeniu. Mody i inne skale czasu mogą zmieniać daty. Exploity są opisami testów graczy, nie gwarancją.",
+  "events": [
+    {
+      "id": "mongols_invasion_warn",
+      "title": "Ostrzeżenie: Mongołowie",
+      "turn_from": 64,
+      "turn_to": 72,
+      "after": "W Vanilla pojawienie się armii jest skryptowane zwykle kilka tur po ostrzeżeniu (około 4–8).",
+      "advice": "Przygotuj garnizony na wschodzie, zwiad, pikinierów i rezerwę złota.",
+      "confidence": "vanilla",
+      "source": "https://steamcommunity.com/app/4700/discussions/0/1642044369665852586/"
+    },
+    {
+      "id": "gunpowder_discovered",
+      "title": "Odkrycie prochu",
+      "turn_from": 105,
+      "turn_to": 110,
+      "after": "Zdarzenie odblokowuje możliwość korzystania z części jednostek prochowych. Rekrutacja zależy też od budynków i frakcji.",
+      "advice": "Sprawdź rozwój warsztatów, miast i możliwości technologiczne wybranego moda.",
+      "confidence": "vanilla",
+      "source": "https://steamcommunity.com/app/4700/discussions/0/3001047413708361335/"
+    },
+    {
+      "id": "black_death_hits",
+      "title": "Czarna śmierć",
+      "turn_from": 133,
+      "turn_to": 133,
+      "after": "Zdarzenie dżumy w standardowych definicjach wydarzeń; rozchodzenie się plagi zależy od kampanii.",
+      "advice": "Sprawdź zagrożone miasta, agentów i bezpieczeństwo gospodarcze.",
+      "confidence": "vanilla",
+      "source": "https://gamefaqs.gamespot.com/boards/931592-medieval-ii-total-war/47817604"
+    },
+    {
+      "id": "timurids_invasion_warn",
+      "title": "Ostrzeżenie: Timurydzi",
+      "turn_from": 144,
+      "turn_to": 152,
+      "after": "Rzeczywisty najazd obsługuje skrypt kampanii, nie samo zdarzenie ostrzegawcze.",
+      "advice": "Zadbaj o antykawalerię i broń dystansową przeciwko słoniom bojowym.",
+      "confidence": "vanilla",
+      "source": "https://steamcommunity.com/app/4700/discussions/0/1642044369665852586/"
+    },
+    {
+      "id": "world_is_round",
+      "title": "Świat jest okrągły",
+      "turn_from": 160,
+      "turn_to": 164,
+      "after": "Wydarzenie otwiera możliwość dalszych wypraw oceanicznych odpowiednimi okrętami.",
+      "advice": "Rozwijaj porty i przygotuj flotę; termin i konkretne okręty zależą od gry/moda.",
+      "confidence": "vanilla",
+      "source": "https://gamefaqs.gamespot.com/boards/931592-medieval-ii-total-war/47817604"
+    }
+  ],
+  "exploits": [
+    {
+      "title": "Hybrydowe miasto i zamek",
+      "category": "Budownictwo",
+      "confidence": "community",
+      "short": "Konwersja zamku w miasto z kolejką zamkowych budynków.",
+      "steps": [
+        "Zapisz osobną kopię kampanii.",
+        "W zamku dodaj do kolejki nowe budynki wojskowe, których nie chcesz utracić.",
+        "Ustaw konwersję do miasta PRZED tymi budynkami.",
+        "Zakończ turę; sprawdź, które budynki pozostały w kolejce i jakie wojska można rekrutować."
+      ],
+      "limits": "Zależy od poziomu budynku, modyfikacji i konkretnej wersji gry.",
+      "source": "https://steamcommunity.com/app/4700/discussions/0/561409854000912001/"
+    },
+    {
+      "title": "Sally Glitch — wypad garnizonu",
+      "category": "Oblężenia",
+      "confidence": "community",
+      "short": "Słabi oblegający i silne posiłki mogą skłonić AI do niekorzystnego wypadu.",
+      "steps": [
+        "Przygotuj osobny zapis.",
+        "Rozpocznij oblężenie niewielką siłą.",
+        "Postaw silną armię w zasięgu wsparcia, bez jej udziału w samym rozpoczęciu oblężenia.",
+        "Obserwuj, czy garnizon wykona wypad, i czy posiłki dołączą do bitwy."
+      ],
+      "limits": "AI nie zawsze wykona wypad; to taktyka na podstawie raportów graczy.",
+      "source": "https://www.reddit.com/r/Medieval2TotalWar/"
+    },
+    {
+      "title": "Usuwanie agentów przez blokowanie pól",
+      "category": "Mapa kampanii",
+      "confidence": "community",
+      "short": "Otaczanie agenta jednostkami i blokowanie ruchu może go usunąć.",
+      "steps": [
+        "Zrób zapis testowy.",
+        "Ustaw oddziały przy agencie, ograniczając mu wolne sąsiednie pola.",
+        "Spróbuj wejść jednostką na jego pole.",
+        "Sprawdź, czy agent znika bez standardowej akcji zabójcy."
+      ],
+      "limits": "Efekt nie jest gwarantowany i może zostać poprawiony przez mod.",
+      "source": "https://www.reddit.com/r/Medieval2TotalWar/"
+    },
+    {
+      "title": "Mieszanie kupców na zasobie",
+      "category": "Ekonomia",
+      "confidence": "experimental",
+      "short": "Próba ochrony lub łączenia wielu kupców na jednym surowcu.",
+      "steps": [
+        "Sprawdź rzeczywisty przychód kupca.",
+        "Ustaw armię na surowcu i eksperymentuj z agentami.",
+        "Porównaj bilans finansowy w kolejnej turze."
+      ],
+      "limits": "Niektóre instalacje blokują metodę lub ograniczają zarobek.",
+      "source": "https://steamcommunity.com/app/4700/discussions/0/5962175849943438686/"
+    },
+    {
+      "title": "Fort i surowiec",
+      "category": "Ekonomia",
+      "confidence": "experimental",
+      "short": "Fort na polu z surowcem może zmienić dostęp lub ochronę kupca.",
+      "steps": [
+        "Zapisz kampanię.",
+        "Sprawdź, czy możesz zbudować fort na surowcu.",
+        "Jeżeli tak, umieść tam kupca i porównaj dochód."
+      ],
+      "limits": "W wielu wersjach ta możliwość jest zablokowana.",
+      "source": "https://steamcommunity.com/app/4700/discussions/0/1642044369657616562/"
+    },
+    {
+      "title": "Bardzo długi trybut",
+      "category": "Dyplomacja",
+      "confidence": "experimental",
+      "short": "Nietypowa wycena ofert z olbrzymią liczbą tur.",
+      "steps": [
+        "Wykonaj osobny zapis.",
+        "Otwórz dyplomację i ustaw żądany trybut od AI.",
+        "Przetestuj bardzo długi czas trwania, jeżeli interfejs na to pozwala.",
+        "Zweryfikuj ocenę oferty oraz rzeczywisty przychód po turze."
+      ],
+      "limits": "AI może odmówić lub nie zapłacić; prezent dla AI jest ryzykowny.",
+      "source": "https://www.reddit.com/r/Medieval2TotalWar/comments/1e975o3/exploit_guide/"
+    },
+    {
+      "title": "Wypad i remis oblężenia",
+      "category": "Oblężenia",
+      "confidence": "experimental",
+      "short": "Remis po wypadzie garnizonu w końcowych turach oblężenia.",
+      "steps": [
+        "Zapisz przed końcową turą oblężenia.",
+        "Jeżeli AI wykona wypad, porównaj efekt remisu ze zwykłym wycofaniem.",
+        "Sprawdź, czy po zakończeniu tury osada kapituluje."
+      ],
+      "limits": "Zależy od stanu zapasów, zasad oblężenia i przebiegu bitwy.",
+      "source": "https://steamcommunity.com/app/4700/discussions/"
+    },
+    {
+      "title": "Krucjata i tania rekrutacja",
+      "category": "Religia",
+      "confidence": "community",
+      "short": "Nadużywanie premii rekrutacyjnych i finansowych dostępnych podczas krucjat.",
+      "steps": [
+        "Sprawdź dostępność krucjaty.",
+        "Porównaj koszty rekrutacji i utrzymania armii krucjatowej.",
+        "Sprawdź, jak zmieni się sytuacja po zakończeniu wyprawy."
+      ],
+      "limits": "Część korzyści to zamierzone zasady gry, nie błąd.",
+      "source": "https://www.feralinteractive.com/en/manuals/medieval2/latest/linux/"
+    },
+    {
+      "title": "Dżihad i premie ruchu",
+      "category": "Religia",
+      "confidence": "experimental",
+      "short": "Próby zachowania premii ruchu oraz kosztów poprzez zmiany udziału w dżihadzie.",
+      "steps": [
+        "Zapisz grę.",
+        "Porównaj punkty ruchu armii w dżihadzie.",
+        "Sprawdź efekt odłączenia i ponownego udziału na następnej turze."
+      ],
+      "limits": "Niepotwierdzone dla modów; możliwa dezercja oddziałów.",
+      "source": "https://www.reddit.com/r/Medieval2TotalWar/"
+    },
+    {
+      "title": "Sztuczki z pulą uzupełnień",
+      "category": "Rekrutacja",
+      "confidence": "experimental",
+      "short": "Zmiany kolejki uzupełnień i scalanie oddziałów mogą prowadzić do nieprawidłowej puli.",
+      "steps": [
+        "Wybierz dwa osłabione oddziały jednego typu.",
+        "Zapisz grę.",
+        "Porównaj pulę uzupełnień przed i po scaleniu w kolejce."
+      ],
+      "limits": "Nie wszystkie wersje pozwalają na odtworzenie problemu.",
+      "source": "https://www.reddit.com/r/Medieval2TotalWar/"
+    }
+  ],
+  "lessons": [
+    {
+      "title": "Pierwsze 5 tur",
+      "body": "Sprawdź ekonomię, koszty armii, cel pierwszej ekspansji i prawa handlowe. Nie wydawaj całego skarbca na wojsko."
+    },
+    {
+      "title": "Zarządzanie miastami",
+      "body": "Miasta świetnie rozwijają handel i ludność. Rozważ drogi, rynki, porty oraz porządek publiczny."
+    },
+    {
+      "title": "Zamki i rekrutacja",
+      "body": "Zamki mają dostęp do wielu elitarnych jednostek. Planowanie rekrutacji ogranicza koszty utrzymania."
+    },
+    {
+      "title": "Dyplomacja",
+      "body": "Prawa handlowe, sojusze i reputacja mają znaczenie. Sprawdzaj kierunek każdej oferty trybutu."
+    },
+    {
+      "title": "Walka z konnymi łucznikami",
+      "body": "Wykorzystuj teren, szyki obronne, łuczników i jednostki o wysokiej odporności; unikaj pościgu całym wojskiem."
+    },
+    {
+      "title": "Oblężenia",
+      "body": "Przygotuj machiny oblężnicze, osłoń jednostki szturmowe i obserwuj morale obrońców."
+    },
+    {
+      "title": "Kupcy i zasoby",
+      "body": "Porównuj przychód na surowcu oraz ryzyko przejęcia kupca. Wartości z plików moda nie są bezpośrednim dochodem."
+    },
+    {
+      "title": "Papiestwo",
+      "body": "Państwo Kościelne ma specjalne reguły. Zdobycie Rzymu nie musi oznaczać trwałego końca papiestwa."
+    },
+    {
+      "title": "Mongołowie i Timurydzi",
+      "body": "Przygotowania zacznij już po ostrzeżeniu. Skrypt może spawnować hordy później, a nie dokładnie w turze ostrzeżenia."
+    }
+  ],
+  "source_links": [
+    "https://steamcommunity.com/app/4700/discussions/0/1642044369665852586/",
+    "https://steamcommunity.com/app/4700/discussions/0/3001047413708361335/",
+    "https://gamefaqs.gamespot.com/boards/931592-medieval-ii-total-war/47817604",
+    "https://www.feralinteractive.com/en/manuals/medieval2/latest/linux/"
+  ]
+}

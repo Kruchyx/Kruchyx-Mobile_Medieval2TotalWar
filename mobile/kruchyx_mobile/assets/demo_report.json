@@ -1,0 +1,406 @@
+{
+  "schema": "kruchyx-companion-v1",
+  "version": "0.9.6",
+  "created_at": "DEMO — brak danych z aktualnej kampanii",
+  "mod": "DANE DEMONSTRACYJNE (nie są statystykami żadnego moda)",
+  "source": "Autorskie kategorie ilustracyjne; koszty są umownymi liczbami demonstracyjnymi",
+  "events_source": "Vanilla: orientacyjny kalendarz",
+  "years_per_turn_assumed": 2,
+  "events": [
+    {
+      "id": "mongols_invasion_warn",
+      "title": "Ostrzeżenie: Mongołowie",
+      "turn_from": 64,
+      "turn_to": 72,
+      "after": "W Vanilla pojawienie się armii jest skryptowane zwykle kilka tur po ostrzeżeniu (około 4–8).",
+      "advice": "Przygotuj garnizony na wschodzie, zwiad, pikinierów i rezerwę złota.",
+      "confidence": "vanilla",
+      "source": "https://steamcommunity.com/app/4700/discussions/0/1642044369665852586/"
+    },
+    {
+      "id": "gunpowder_discovered",
+      "title": "Odkrycie prochu",
+      "turn_from": 105,
+      "turn_to": 110,
+      "after": "Zdarzenie odblokowuje możliwość korzystania z części jednostek prochowych. Rekrutacja zależy też od budynków i frakcji.",
+      "advice": "Sprawdź rozwój warsztatów, miast i możliwości technologiczne wybranego moda.",
+      "confidence": "vanilla",
+      "source": "https://steamcommunity.com/app/4700/discussions/0/3001047413708361335/"
+    },
+    {
+      "id": "black_death_hits",
+      "title": "Czarna śmierć",
+      "turn_from": 133,
+      "turn_to": 133,
+      "after": "Zdarzenie dżumy w standardowych definicjach wydarzeń; rozchodzenie się plagi zależy od kampanii.",
+      "advice": "Sprawdź zagrożone miasta, agentów i bezpieczeństwo gospodarcze.",
+      "confidence": "vanilla",
+      "source": "https://gamefaqs.gamespot.com/boards/931592-medieval-ii-total-war/47817604"
+    },
+    {
+      "id": "timurids_invasion_warn",
+      "title": "Ostrzeżenie: Timurydzi",
+      "turn_from": 144,
+      "turn_to": 152,
+      "after": "Rzeczywisty najazd obsługuje skrypt kampanii, nie samo zdarzenie ostrzegawcze.",
+      "advice": "Zadbaj o antykawalerię i broń dystansową przeciwko słoniom bojowym.",
+      "confidence": "vanilla",
+      "source": "https://steamcommunity.com/app/4700/discussions/0/1642044369665852586/"
+    },
+    {
+      "id": "world_is_round",
+      "title": "Świat jest okrągły",
+      "turn_from": 160,
+      "turn_to": 164,
+      "after": "Wydarzenie otwiera możliwość dalszych wypraw oceanicznych odpowiednimi okrętami.",
+      "advice": "Rozwijaj porty i przygotuj flotę; termin i konkretne okręty zależą od gry/moda.",
+      "confidence": "vanilla",
+      "source": "https://gamefaqs.gamespot.com/boards/931592-medieval-ii-total-war/47817604"
+    }
+  ],
+  "units": [
+    {
+      "name": "Przykład: ciężka piechota",
+      "role": "Piechota wręcz",
+      "owners": [
+        "england",
+        "france",
+        "hre",
+        "poland"
+      ],
+      "attack": null,
+      "defence": null,
+      "charge": null,
+      "morale": null,
+      "cost": 650,
+      "upkeep": 150,
+      "score": 0
+    },
+    {
+      "name": "Przykład: włócznicy",
+      "role": "Piechota antykawaleryjska",
+      "owners": [
+        "england",
+        "poland",
+        "hungary",
+        "scotland"
+      ],
+      "attack": null,
+      "defence": null,
+      "charge": null,
+      "morale": null,
+      "cost": 420,
+      "upkeep": 105,
+      "score": 0
+    },
+    {
+      "name": "Przykład: pikinierzy",
+      "role": "Piechota antykawaleryjska",
+      "owners": [
+        "milan",
+        "scotland",
+        "france"
+      ],
+      "attack": null,
+      "defence": null,
+      "charge": null,
+      "morale": null,
+      "cost": 550,
+      "upkeep": 125,
+      "score": 0
+    },
+    {
+      "name": "Przykład: lekka jazda",
+      "role": "Lekka kawaleria",
+      "owners": [
+        "poland",
+        "hungary",
+        "turks",
+        "byzantium"
+      ],
+      "attack": null,
+      "defence": null,
+      "charge": null,
+      "morale": null,
+      "cost": 530,
+      "upkeep": 110,
+      "score": 0
+    },
+    {
+      "name": "Przykład: rycerze",
+      "role": "Ciężka kawaleria",
+      "owners": [
+        "england",
+        "france",
+        "poland",
+        "hre"
+      ],
+      "attack": null,
+      "defence": null,
+      "charge": null,
+      "morale": null,
+      "cost": 1050,
+      "upkeep": 240,
+      "score": 0
+    },
+    {
+      "name": "Przykład: łucznicy",
+      "role": "Strzelcy",
+      "owners": [
+        "england",
+        "russia",
+        "turks"
+      ],
+      "attack": null,
+      "defence": null,
+      "charge": null,
+      "morale": null,
+      "cost": 400,
+      "upkeep": 100,
+      "score": 0
+    },
+    {
+      "name": "Przykład: kusznicy",
+      "role": "Strzelcy",
+      "owners": [
+        "milan",
+        "venice",
+        "hre"
+      ],
+      "attack": null,
+      "defence": null,
+      "charge": null,
+      "morale": null,
+      "cost": 500,
+      "upkeep": 110,
+      "score": 0
+    },
+    {
+      "name": "Przykład: konni łucznicy",
+      "role": "Kawaleria strzelecka",
+      "owners": [
+        "turks",
+        "russia",
+        "mongols"
+      ],
+      "attack": null,
+      "defence": null,
+      "charge": null,
+      "morale": null,
+      "cost": 750,
+      "upkeep": 155,
+      "score": 0
+    },
+    {
+      "name": "Przykład: milicja",
+      "role": "Piechota wręcz",
+      "owners": [
+        "england",
+        "france",
+        "milan",
+        "venice",
+        "sicily"
+      ],
+      "attack": null,
+      "defence": null,
+      "charge": null,
+      "morale": null,
+      "cost": 250,
+      "upkeep": 80,
+      "score": 0
+    },
+    {
+      "name": "Przykład: katapulta",
+      "role": "Artyleria",
+      "owners": [
+        "england",
+        "egypt",
+        "byzantium"
+      ],
+      "attack": null,
+      "defence": null,
+      "charge": null,
+      "morale": null,
+      "cost": 1000,
+      "upkeep": 200,
+      "score": 0
+    },
+    {
+      "name": "Przykład: halabardnicy",
+      "role": "Piechota wręcz",
+      "owners": [
+        "hre",
+        "france",
+        "denmark"
+      ],
+      "attack": null,
+      "defence": null,
+      "charge": null,
+      "morale": null,
+      "cost": 700,
+      "upkeep": 135,
+      "score": 0
+    },
+    {
+      "name": "Przykład: straż miejska",
+      "role": "Piechota wręcz",
+      "owners": [
+        "egypt",
+        "moors",
+        "spain",
+        "portugal"
+      ],
+      "attack": null,
+      "defence": null,
+      "charge": null,
+      "morale": null,
+      "cost": 350,
+      "upkeep": 100,
+      "score": 0
+    },
+    {
+      "name": "Przykład: ciężka jazda wschodnia",
+      "role": "Ciężka kawaleria",
+      "owners": [
+        "byzantium",
+        "egypt",
+        "turks"
+      ],
+      "attack": null,
+      "defence": null,
+      "charge": null,
+      "morale": null,
+      "cost": 920,
+      "upkeep": 220,
+      "score": 0
+    },
+    {
+      "name": "Przykład: szkockie włócznie",
+      "role": "Piechota antykawaleryjska",
+      "owners": [
+        "scotland"
+      ],
+      "attack": null,
+      "defence": null,
+      "charge": null,
+      "morale": null,
+      "cost": 420,
+      "upkeep": 95,
+      "score": 0
+    }
+  ],
+  "factions": [
+    {
+      "name": "england",
+      "score": 0,
+      "unit_count": 6
+    },
+    {
+      "name": "france",
+      "score": 0,
+      "unit_count": 5
+    },
+    {
+      "name": "hre",
+      "score": 0,
+      "unit_count": 4
+    },
+    {
+      "name": "spain",
+      "score": 0,
+      "unit_count": 1
+    },
+    {
+      "name": "venice",
+      "score": 0,
+      "unit_count": 2
+    },
+    {
+      "name": "sicily",
+      "score": 0,
+      "unit_count": 1
+    },
+    {
+      "name": "milan",
+      "score": 0,
+      "unit_count": 3
+    },
+    {
+      "name": "scotland",
+      "score": 0,
+      "unit_count": 3
+    },
+    {
+      "name": "denmark",
+      "score": 0,
+      "unit_count": 1
+    },
+    {
+      "name": "portugal",
+      "score": 0,
+      "unit_count": 1
+    },
+    {
+      "name": "poland",
+      "score": 0,
+      "unit_count": 4
+    },
+    {
+      "name": "hungary",
+      "score": 0,
+      "unit_count": 2
+    },
+    {
+      "name": "russia",
+      "score": 0,
+      "unit_count": 2
+    },
+    {
+      "name": "byzantium",
+      "score": 0,
+      "unit_count": 3
+    },
+    {
+      "name": "turks",
+      "score": 0,
+      "unit_count": 4
+    },
+    {
+      "name": "egypt",
+      "score": 0,
+      "unit_count": 3
+    },
+    {
+      "name": "moors",
+      "score": 0,
+      "unit_count": 1
+    },
+    {
+      "name": "papal_states",
+      "score": 0,
+      "unit_count": 0
+    },
+    {
+      "name": "mongols",
+      "score": 0,
+      "unit_count": 1
+    },
+    {
+      "name": "timurids",
+      "score": 0,
+      "unit_count": 0
+    },
+    {
+      "name": "aztecs",
+      "score": 0,
+      "unit_count": 0
+    },
+    {
+      "name": "slave",
+      "score": 0,
+      "unit_count": 0
+    }
+  ],
+  "sample": true,
+  "disclaimer": "WARTOŚCI DEMO: nie są danymi Medieval II, nie służą do porównywania mocy frakcji ani budowania realnych armii. Wczytaj raport wyeksportowany przez Kruchyx Windows. Grafiki emblematów są autorskie, nie są oficjalnymi herbami z gry."
+}
