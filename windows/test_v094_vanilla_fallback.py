@@ -58,7 +58,9 @@ class VanillaFallbackTests(unittest.TestCase):
             text=got['log_path'].read_text(encoding='utf8')
             self.assertIn('FOUND_IN_GAME_FOLDER:',text)
             self.assertIn('FILE_SOURCES:',text)
-            self.assertIn(str(campaign.resolve()),text)
+            # Log zapisuje sciezki w repr(slownik): pod Windows backslash jest podwojony.
+            # Porownuj reprezentacje repr(), a nie surowa sciezke.
+            self.assertIn(repr(str(campaign.resolve())), text)
             self.assertEqual(regions.read_text(),'test_region')
             self.assertEqual(campaign.read_text(),'campaign imperial_campaign')
 
