@@ -20,7 +20,7 @@ class Test(unittest.TestCase):
    root=Path(temp); data=root/'data'; camp=data/'world/maps/campaign/custom_camp'
    camp.mkdir(parents=True)
    (camp/'descr_strat.txt').write_text(S)
-   self.assertEqual(resolve_data_folder(root),data)
-   self.assertEqual(resolve_data_folder(data),data)
-   self.assertEqual(campaign_paths(data),[camp/'descr_strat.txt'])
+   self.assertEqual(resolve_data_folder(root),data.resolve())
+   self.assertEqual(resolve_data_folder(data),data.resolve())
+   self.assertEqual(campaign_paths(data),[(camp/'descr_strat.txt').resolve()])
 if __name__=='__main__':unittest.main()

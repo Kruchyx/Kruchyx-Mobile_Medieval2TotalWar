@@ -32,7 +32,7 @@ class VanillaDiagnosticsTests(unittest.TestCase):
             self.assertEqual(runner.call_count,6)
             self.assertIn('..\\..\\packs\\*.pack',' '.join(cmd))
             self.assertEqual(runner.call_args.kwargs['input'],'Y\nY\nY\n')
-            self.assertEqual(runner.call_args.kwargs['cwd'],str(game/'tools'/'unpacker'))
+            self.assertEqual(runner.call_args.kwargs['cwd'],str((game/'tools'/'unpacker').resolve()))
             self.assertIn('--mode=0',cmd)
 
     def test_missing_legacy_dll_is_explained(self):

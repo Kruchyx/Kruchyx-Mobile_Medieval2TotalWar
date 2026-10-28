@@ -24,7 +24,7 @@ class BrotherEditionTests(unittest.TestCase):
             picks=list_campaign_choices(game)
             self.assertEqual(picks[0]['kind'],'vanilla')
             self.assertEqual([x['id'] for x in picks[1:]],['teutonic','vanilla_kingdoms_uncompromised'])
-            self.assertEqual(find_game_root(game/'mods'/'teutonic'),game)
+            self.assertEqual(find_game_root(game/'mods'/'teutonic'),game.resolve())
 
     def test_cache_isolation_only(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -43,7 +43,7 @@ class BrotherEditionTests(unittest.TestCase):
             self.assertEqual(run.call_count,6)
             args=run.call_args[0][0]
             self.assertTrue(any(s.startswith('--filter=') for s in args))
-            self.assertTrue(any(str(cache) in s for s in args))
+            self.assertTrue(any(str(cache.resolve()) in s for s in args))
 
     def test_mod_override_beats_base_data(self):
         with tempfile.TemporaryDirectory() as tmp:

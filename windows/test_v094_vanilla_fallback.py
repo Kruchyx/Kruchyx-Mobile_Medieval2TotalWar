@@ -31,8 +31,8 @@ class VanillaFallbackTests(unittest.TestCase):
             self.assertEqual(regions.read_text(),'test_region')
             self.assertEqual(campaign.read_text(),'campaign imperial_campaign')
             context=file_capabilities(game)
-            self.assertEqual(context['files']['regions'],regions)
-            self.assertEqual(context['files']['campaign'],campaign)
+            self.assertEqual(context['files']['regions'],regions.resolve())
+            self.assertEqual(context['files']['campaign'],campaign.resolve())
 
     def test_unpack_combines_cache_and_loose_and_logs_sources(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -58,7 +58,7 @@ class VanillaFallbackTests(unittest.TestCase):
             text=got['log_path'].read_text(encoding='utf8')
             self.assertIn('FOUND_IN_GAME_FOLDER:',text)
             self.assertIn('FILE_SOURCES:',text)
-            self.assertIn(str(campaign),text)
+            self.assertIn(str(campaign.resolve()),text)
             self.assertEqual(regions.read_text(),'test_region')
             self.assertEqual(campaign.read_text(),'campaign imperial_campaign')
 
